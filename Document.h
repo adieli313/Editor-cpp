@@ -12,12 +12,15 @@
 using namespace std;
 
 class Document {
+
+    //class members.
+
 private:
     vector<string> doc;
     int currLine;
 
+    //class functions.
 public:
-
     Document();
     void printLine();
     void printNumLine();

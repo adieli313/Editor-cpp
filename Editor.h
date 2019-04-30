@@ -11,7 +11,7 @@
 #include <sstream>
 #include "Document.h"
 using namespace std;
-
+// enum class to classify the commands.
 enum class code {
     printLine,
     printNumLine,
@@ -28,10 +28,11 @@ enum class code {
 };
 
 class Editor {
+    //class members.
 private:
     Document *doc;
     code code_num(string input);
-
+    //class functions.
 public:
     void loop();
     Editor();

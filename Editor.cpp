@@ -3,11 +3,11 @@
 #include "Editor.h"
 #include <iostream>
 using namespace std;
-
+//constructor
 Editor::Editor(){
     doc = new Document();
 }
-
+//return code num to each command.
 code Editor::code_num(string input){
     if (input == "p") return code::printLine;
     if (input == "n") return code::printNumLine;
@@ -28,6 +28,7 @@ code Editor::code_num(string input){
     }
     else return code::def;
 }
+//run editor. wait for user command and activate the relevant Document function.
 void Editor::loop(){
     while(1) {
         string input;
